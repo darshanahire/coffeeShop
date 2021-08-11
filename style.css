@@ -22,8 +22,8 @@ body{
     width: 35%;
     margin: 40px auto;
 }
-#noOfCups,#form-select{
-    background-color: rgb(241, 239, 239);
+#NumOfCups,#DrinkType{
+    background-color: rgb(226, 226, 226);
 }
 #payBtn,#refillBtn{
     color: white;
