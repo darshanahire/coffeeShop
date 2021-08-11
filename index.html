@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growpartner Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Growpartner Coffee Shop</a>
+        </div>
+    </nav>
+    <div class="container-main">
+        <!-- Avilable Stock container -->
+        <div class="left">
+            <h3 class="text-center my-4 mb-5" id="table-heading">Stock Available</h3>
+            <div id="table">
+                <div>
+                    <div class="row my-2 ">
+                        <p class="col text-center">water</p>
+                        <p class="col text-center" id="water-stock"></p>
+                    </div>
+                    <div class="row my-2 ">
+                        <p class="col text-center">milk</p>
+                        <p class="col text-center" id="milk-stock"></p>
+                    </div>
+                    <div class="row my-2 ">
+                        <p class="col text-center">tea</p>
+                        <p class="col text-center" id="tea-stock"></p>
+                    </div>
+                    <div class="row my-2 ">
+                        <p class="col text-center">coffee</p>
+                        <p class="col text-center" id="coffee-stock"></p>
+                    </div>
+                    <div class="row my-2 ">
+                        <p class="col text-center">sugar</p>
+                        <p class="col text-center" id="sugar-stock"></p>
+                    </div>
+                </div>
+                <div class="d-grid col-7 mx-auto">
+                    <button class="btn my-2 " id="refillBtn" type="button">Refill Stock</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <!-- Form container -->
+            <h1 class="text-center my-5" id="main-heading">Welcome to the coffee shop</h1>
+            <h3 class="text-center" id="form heading">Select order preferance</h3>
+            <form class="form" id="myform">
+                <div class="mb-3">
+                    <select class="form-select" id="DrinkType" aria-label="Default select example">
+                        <option selected>Select Drink Type</option>
+                        <option value=100>Strong Coffee</option>
+                        <option value=75>Light coffee</option>
+                        <option value=60>Strong Tea</option>
+                        <option value=50>Light Tea</option>
+                    </select>
+                </div>
+                <input type="number" class="form-control noOfCups" id="NumOfCups" oninput="calculate()"
+                    placeholder="Enter no. of cupes" autocomplete="off">
+                <div class="my-3 form-check">
+                    <input class="form-check-input" type="checkbox" oninput="calculate()" value=5 id="withSugar">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        With Sugar
+                    </label>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn my-3" id="payBtn" type="button">Pay Rs. 0</button>
+                    <!-- spinner rotaes when you order something -->
+                    <div id="spinner"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script></script>
+<!-- bootstrap link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+</html>

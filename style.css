@@ -1,0 +1,34 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+.navbar-brand{
+    margin-left: 100px;
+    font-weight: 600;
+}
+.container-main{
+    display: flex;
+    height: 698px;
+    width: 100%;
+}
+.left{
+    width: 20%;
+    background-color: rgb(255, 245, 226);
+}
+.right{
+    width: 80%;
+}
+.form{
+    width: 35%;
+    margin: 40px auto;
+}
+#noOfCups,#form-select{
+    background-color: rgb(241, 239, 239);
+}
+#payBtn,#refillBtn{
+    color: white;
+    background-color: rgb(63, 35, 16);
+}
+.align-right{
+    text-align: right;
+}
